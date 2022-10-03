@@ -1,0 +1,131 @@
+/*========================================
+Dark cyan: hsl(158, 36%, 37%)
+Cream: hsl(30, 38%, 92%)
+
+Very dark blue: hsl(212, 21%, 14%)  
+Dark grayish blue: hsl(228, 12%, 48%) 
+White: hsl(0, 0%, 100%)
+
+Font size (paragraph): 14px
+
+Family: [Montserrat](https: //fonts.google.com/specimen/Montserrat)
+    - Weights: 500, 700 - 
+Family: [Fraunces](https: //fonts.google.com/specimen/Fraunces)
+        - Weights: 700
+==========================================*/
+
+/*--------------GENERAL------------*/
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url("../font/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url("../font/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Fraunces-Bold;
+    src: url("../font/Fraunces_144pt-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3EAE2;
+}
+
+body section article h1,
+body section article p {
+    font-family: Montserrat-Medium;
+} 
+
+body section article h2,
+body section article div p:nth-of-type(1) {
+    font-family: Fraunces-Bold;
+}
+
+/*--------------SECTION--------------*/
+body section {
+    font-size: 10px;
+    display: flex;
+    height: 60vh;
+    width: 36.5vw;
+    margin: 20vh auto;
+    background-color: white;
+    border-radius: 10px;
+} 
+
+body section img {
+    height: 60vh;
+    border-top-left-radius: 10px;
+}
+
+body section article {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2vw;
+}
+
+body section article h1 {
+    font-size: 1.3em;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 5vh;
+}
+
+body section article h2 {
+    font-size: 4em;
+    line-height: 4vh;
+    padding: 4vh 0;
+}
+
+body section article p:nth-of-type(1) {
+    font-size: 1.5em;
+    line-height: 2.5vh;
+    color: hsl(228, 12%, 48%);
+}
+
+body section article div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4vh;
+}
+
+body section article div p:nth-of-type(1) {
+    font-size: 3.5em;
+    color: hsl(158, 36%, 37%);
+}
+
+body section article div p:nth-of-type(2) {
+    font-size: 1.5em;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    padding-right: 2vw;
+}
+
+body section article button{
+    padding: 1.4vh 3vw 1.4vh 3vw;
+    margin-top: 5vh;
+    background-color: #1A4031;
+    border-color: #1A4031;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+body section article button a {
+    color: white;
+    text-decoration: none;
+}
+
+body section article button span::before {
+    content: url(/images/icon-cart.svg);
+    margin-right: 1vw;
+}
